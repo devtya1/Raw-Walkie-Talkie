@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c; /* Dark background */
+    color: #e1e1e1; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content horizontally */
+}
+
+.raw-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222; /* Same as walkie-talkie background */
+    border-bottom: 3px solid #555; /* Border at the bottom */
+    text-align: center;
+    z-index: 20; /* Above the walkie-talkie */
+}
+
+.raw-header h1 {
+    margin: 0;
+    padding: 10px;
+    color: #00ff00; /* Neon green color for the heading */
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Neon effect */
+}
+
+.walkie-talkie {
+    background: linear-gradient(180deg, #4b4b4b, #222);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 350px; /* Increased height */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 60px; /* Make room for the fixed header */
+    margin-bottom: 100px; /* Space below the walkie-talkie */
+}
+
+.screen {
+    background-color: #1a1a1a;
+    border: 2px solid #555;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.status {
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.btn {
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px; /* Added margin to buttons for spacing */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-secondary {
+    background-color: #dc3545; /* Stop button color */
+}
+
+.btn-secondary:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.volume-control label {
+    margin-right: 10px; /* Space between label and input */
+}
+
+.warning-marquee {
+    background-color: red; /* Red background for warning marquee */
+    color: white; /* White text color */
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0; /* Fixed at the bottom of the page */
+    z-index: 10; /* Above other content */
+    font-size: 16px; /* Font size for better visibility */
+}

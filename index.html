@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkie Talkie Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDKs -->
+    <!-- Firebase v8 CDN Links -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+</head>
+<body>
+    <header class="raw-header"><h1>RAW</h1></header>
+    <div class="walkie-talkie">
+        <main class="walkie-controls">
+            <div class="screen"><p class="status">Ready</p></div>
+            <div class="buttons">
+                <button id="talkButton" class="btn btn-primary">Push to Talk</button>
+                <button id="stopButton" class="btn btn-secondary">Stop</button>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
